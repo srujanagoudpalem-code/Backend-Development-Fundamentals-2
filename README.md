@@ -5,8 +5,7 @@
 **Section:CSE(2-D)
 
 ## Live Link
-Not deployed. The project runs locally using Node.js and Express.
-
+https://backend-development-fundamentals-2-6.onrender.com
 ## Objective
 To connect an Express server with a SQLite database and perform CRUD operations through HTTP routes.
 
