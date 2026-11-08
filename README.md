@@ -70,13 +70,70 @@ To develop and test a REST API using Node.js, Express.js, and SQLite. The projec
 
 Add your Lab 3 screenshots in the `LAB_3ABD/SCREENSHOTS/` folder and link them below.
 
-- GET All Books
-- Search Books
-- POST Book
-- PUT Book
-- DELETE Book
-- 404 Error
-- Validation Error
+## Screenshots
+## Screenshots
+
+All Lab 3 Postman testing screenshots are available in the `LAB_3ABD/SCREENSHOTS/` folder.
+
+### CRUD Operations
+
+**GET All Books**
+
+![Get All Books](LAB_3ABD/SCREENSHOTS/get-all-books.png)
+
+**POST Book**
+
+![POST Book](LAB_3ABD/SCREENSHOTS/post-book.png)
+
+**PUT Book**
+
+![PUT Book](LAB_3ABD/SCREENSHOTS/put-book.png)
+
+**DELETE Book**
+
+![DELETE Book](LAB_3ABD/SCREENSHOTS/delete-book.png)
+
+### Search and Filtering
+
+**Search Books**
+
+![Search Books](LAB_3ABD/SCREENSHOTS/search-books.png)
+
+**Price Range Filter**
+
+![Price Filter](LAB_3ABD/SCREENSHOTS/price-filter.png)
+
+**Limit and Offset**
+
+![Limit and Offset](LAB_3ABD/SCREENSHOTS/limit-offset.png)
+
+### Sorting
+
+**Sort Books by Title (A–Z)**
+
+![Sort by Title](LAB_3ABD/SCREENSHOTS/Sort%20books%20by%20title%20(A%E2%80%93Z).png)
+
+**Sort Books by Author (A–Z)**
+
+![Sort by Author](LAB_3ABD/SCREENSHOTS/Sort%20books%20by%20author%20(A%E2%80%93Z).png)
+
+**Sort Books by Price (Ascending – Lowest to Highest)**
+
+![Sort by Price Ascending](LAB_3ABD/SCREENSHOTS/Sort%20books%20by%20price%20(ascending%20%E2%80%93%20lowest%20to%20highest).png)
+
+**Sort Books by Price (Descending – Highest to Lowest)**
+
+![Sort by Price Descending](LAB_3ABD/SCREENSHOTS/Sort%20books%20by%20price%20(descending%20%E2%80%93%20highest%20to%20lowest).png)
+
+### Validation and Error Handling
+
+**Input Validation Error (400 Bad Request)**
+
+![Validation Error](LAB_3ABD/SCREENSHOTS/validation-error.png)
+
+**Book Not Found (404 Not Found)**
+
+![404 Error](LAB_3ABD/SCREENSHOTS/404-error.png)
 
 ## Conclusion
 
