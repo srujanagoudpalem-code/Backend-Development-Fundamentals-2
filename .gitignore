@@ -1,0 +1,84 @@
+node_modules/
+.env
+# Lab 3: REST API, Query Parameters, Validation and Debugging
+
+**Name:** Srujana Goud Palem  
+**Registration Number**:252U1R1177  
+**Section**:CSE(2-D)
+
+## Objective
+
+To develop a RESTful API using Node.js, Express and SQLite with search, sorting, filtering, validation and debugging.
+
+## Technologies Used
+
+- Node.js
+- Express.js
+- SQLite
+- Postman
+
+## How to Run
+
+1. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+2. Start the server:
+
+   ```bash
+   npm start
+   ```
+
+3. Open the API:
+
+   `http://localhost:3000/books/`
+
+## API Endpoints
+
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | `/books/` | Get all books |
+| GET | `/books/:bookId/` | Get one book |
+| POST | `/books/` | Add a book |
+| PUT | `/books/:bookId/` | Update a book |
+| DELETE | `/books/:bookId/` | Delete a book |
+
+## Query Parameters
+
+- `search_q` – Search books by title
+- `order_by` – Sort by title, author or price
+- `order` – Sort in ASC or DESC order
+- `limit` – Maximum number of books
+- `offset` – Number of books to skip
+- `min_price` – Minimum price
+- `max_price` – Maximum price
+
+## Validation
+
+- Rejects missing title and author.
+- Rejects invalid or non-numeric prices and pages.
+- Returns 400 for invalid input.
+- Returns 404 when a book does not exist.
+- Returns appropriate success status codes.
+
+## Screenshots
+
+Postman screenshots are saved in the `screenshots` folder.
+
+![Get all books](screenshots/get-all-books.png)
+
+![Search books](screenshots/search-books.png)
+
+![POST book](screenshots/post-book.png)
+
+![PUT book](screenshots/put-book.png)
+
+![DELETE book](screenshots/delete-book.png)
+
+![404 error](screenshots/404-error.png)
+
+## Notes
+
+Completed search, sorting, pagination, price filtering, CRUD operations, validation and error handling using SQLite and Express.
