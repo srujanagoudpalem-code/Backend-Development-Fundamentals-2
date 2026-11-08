@@ -1,63 +1,83 @@
-# Lab 2: SQLite Database and CRUD Routes
+# Lab 3: REST API, Query Parameters and Validation
 
-**Name:** Srujana  
-**Registration Number:252U1R1177  
-**Section:CSE(2-D)
+**Name:** Srujana Goud Palem  
+**Registration Number:** 252U1R1177  
+**Section:** CSE (2-D)
 
-## Live Link
-https://backend-development-fundamentals-2-6.onrender.com
 ## Objective
-To connect an Express server with a SQLite database and perform CRUD operations through HTTP routes.
+
+To develop and test a REST API using Node.js, Express.js, and SQLite. The project implements CRUD operations, query parameters, input validation, and error handling.
 
 ## Technologies Used
+
 - Node.js
 - Express.js
 - SQLite
 - JavaScript
 - Postman
-- VS Code
+- Visual Studio Code
 
 ## How to Run
 
 1. Open the project folder in VS Code.
-2. Install dependencies:
+2. Install the dependencies:
 
-   `npm install`
+   ```bash
+   npm install
+   ```
 
 3. Start the server:
 
-   `npx nodemon app.js`
+   ```bash
+   node app.js
+   ```
 
-4. Server URL: `http://localhost:3000/`
+4. Open the API using:
+
+   `http://localhost:3000/books/`
 
 ## API Endpoints
 
 | Method | Endpoint | Description |
 |---|---|---|
-| GET | /books/ | Get all books |
-| GET | /books/:bookId/ | Get one book |
-| POST | /books/ | Add a new book |
-| PUT | /books/:bookId/ | Update a book |
-| DELETE | /books/:bookId/ | Delete a book |
+| GET | `/books/` | Get all books |
+| GET | `/books/:bookId/` | Get a single book |
+| POST | `/books/` | Add a new book |
+| PUT | `/books/:bookId/` | Update a book |
+| DELETE | `/books/:bookId/` | Delete a book |
+
+## Query Parameters
+
+| Parameter | Description |
+|---|---|
+| `search_q` | Search books by title or author |
+| `order_by` | Sort by title, author, or price |
+| `order` | Sort in ascending or descending order |
+| `limit` | Limit the number of results |
+| `offset` | Skip a specified number of results |
+| `min_price` | Filter books by minimum price |
+| `max_price` | Filter books by maximum price |
+
+## Input Validation and Error Handling
+
+- Validates required book title and author.
+- Validates price and pages.
+- Returns appropriate error responses for invalid input.
+- Returns a 404 response when a requested book is not found.
+- Uses parameterized SQL queries.
 
 ## Screenshots
 
-### GET All Books
-![GET All Books](screenshots/get-all-books.png)
+Add your Lab 3 screenshots in the `LAB_3ABD/SCREENSHOTS/` folder and link them below.
 
-### GET Single Book
-![GET Single Book](screenshots/get-single-book.png)
+- GET All Books
+- Search Books
+- POST Book
+- PUT Book
+- DELETE Book
+- 404 Error
+- Validation Error
 
-### POST Book
-![POST Book](screenshots/post-book.png)
+## Conclusion
 
-### PUT Book
-![PUT Book](screenshots/put-book.png)
-
-### DELETE Book
-![DELETE Book](screenshots/delete-book.png)
-
-## Notes
-Successfully created a SQLite database and connected it to an Express server. Implemented and tested all five CRUD operations using Postman.
-
-Parameterized SQL queries were used to prevent SQL injection
+Successfully developed and tested a REST API using Node.js, Express.js, and SQLite. Implemented CRUD operations, query parameters, input validation, and error handling using Postman.
