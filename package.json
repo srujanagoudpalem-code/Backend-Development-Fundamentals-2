@@ -1,22 +1,22 @@
+
 {
-  "name": "lab2abd",
+  "name": "lab3-rest-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "REST API using Node.js, Express and SQLite",
+  "main": "app.js",
   "scripts": {
-  "start": "node app.js",
-  "dev": "nodemon app.js"
-}
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "engines": {
+    "node": "20.x"
+  },
   "dependencies": {
-    "express": "^5.3.0",
-    "sqlite": "^5.1.1",
-    "sqlite3": "^6.0.1"
+    "express": "^4.21.2",
+    "sqlite3": "^5.1.7",
+    "sqlite": "^5.1.1"
   },
   "devDependencies": {
-    "nodemon": "^3.1.14"
+    "nodemon": "^3.1.9"
   }
 }
